@@ -27,6 +27,8 @@ const BasePlayground: SFC<PlaygroundProps> = ({
   __code,
   __codesandbox,
 }) => {
+  console.log('COMPS', components);
+  console.log('COMPS-R', components.render);
   if (!components || !components.render) return null
 
   return (
